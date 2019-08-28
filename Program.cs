@@ -1,20 +1,20 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace ToDoList
+namespace mvc_ordertracker
 {
-  public class Program
-  {
-    public static void Main(string[] args)
+    public class Program
     {
-      var host = new WebHostBuilder()
-        .UseKestrel()
-        .UseContentRoot(Directory.GetCurrentDirectory())
-        .UseIISIntegration()
-        .UseStartup<Startup>()
-        .Build();
+        public static void Main(string[] args)
+        {
+            var host = new WebHostBuilder()
+              .UseKestrel()
+              .UseContentRoot(Directory.GetCurrentDirectory())
+              .UseIISIntegration()
+              .UseStartup<Startup>()
+              .Build();
 
-      host.Run();
+            host.Run();
+        }
     }
-  }
 }

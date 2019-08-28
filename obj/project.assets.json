@@ -12081,11 +12081,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/mvc-orderTracker/OrderTracker/OrderTracker.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/mvc-orderTracker/OrderTracker.csproj",
       "projectName": "OrderTracker",
-      "projectPath": "/Users/Guest/Desktop/mvc-orderTracker/OrderTracker/OrderTracker.csproj",
+      "projectPath": "/Users/Guest/Desktop/mvc-orderTracker/OrderTracker.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
-      "outputPath": "/Users/Guest/Desktop/mvc-orderTracker/OrderTracker/obj/",
+      "outputPath": "/Users/Guest/Desktop/mvc-orderTracker/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

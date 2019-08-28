@@ -1,0 +1,46 @@
+@using OrderTracker.CreateViewModel;
+@model CreateViewModel
+
+@{
+    ViewBag.Title = "Create Employee";
+}
+
+@*To support file upload set the form element enctype="multipart/form-data" *@
+@using (Html.BeginForm("Create", "UserProfile", FormMethod.Post,new{ enctype="multipart/form-data"}))
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
+
+    <input type="submit" value="Create" class="btn btn-default" />
+
+ <div class="form-group row">
+        <label asp-for="Photo" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <div class="custom-file">
+                <input asp-for="Photo" class="form-control custom-file-input">
+                <label class="custom-file-label">Choose File...</label>
+            </div>
+        </div>
+    </div>
+    @Html.LabelFor(model => model.Photo)
+    @Html.TextBoxFor(model => model.Photo, new { type = "file" })
+
+}
+
+ 
+<br>
+
+
+    @*This script is required to display the selected file in the file upload element*@
+
+    @section Scripts {
+        <script>
+            $(document).ready(function () {
+                $('.custom-file-input').on("change", function () {
+                    var fileName = $(this).val().split("\\").pop();
+                    $(this).next('.custom-file-label').html(fileName);
+                });
+            });
+        </script>
+    }
+
