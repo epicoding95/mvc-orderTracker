@@ -11,7 +11,7 @@
     @Html.LabelFor(model => model.Name)
     @Html.EditorFor(model => model.Name)
 
-    <input type="submit" value="Create" class="btn btn-default" />
+
 
  <div class="form-group row">
         <label asp-for="Photo" class="col-sm-2 col-form-label"></label>
@@ -24,7 +24,7 @@
     </div>
     @Html.LabelFor(model => model.Photo)
     @Html.TextBoxFor(model => model.Photo, new { type = "file" })
-
+<input type="submit" value="Create" class="btn btn-default" />
 }
 
  
